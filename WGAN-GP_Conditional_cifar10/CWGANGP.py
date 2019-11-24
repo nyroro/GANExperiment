@@ -1,5 +1,4 @@
 # CIFAR
-%tensorflow_version 1.5
 from __future__ import print_function, division
 
 from keras.datasets import cifar10

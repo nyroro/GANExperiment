@@ -12,7 +12,7 @@ with open('result.txt', 'r') as f:
 
 datas = sorted(datas, key=lambda t: t[0])
 fig, ax = plt.subplots()
-plt.plot([t[0] for t in datas], [t[2] for t in datas], label='G')
-plt.plot([t[0] for t in datas], [t[1] for t in datas], label='D')
+plt.plot([t[0] for t in datas], [t[2] for t in datas], label='G',zorder=0)
+plt.plot([t[0] for t in datas], [t[1] for t in datas], label='D',zorder=1)
 plt.legend()
 plt.savefig('loss.png')
